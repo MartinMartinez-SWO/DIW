@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    background-color: midnightblue;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>.palabras{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    padding: 2em;
+}
+
+.burger{
+    display: none;
+}
+
+section{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
+
+article{
+    background-color: azure;
+    width: 75%;
+    height: 100%;
+}
+
+aside{
+    background-color: coral;
+    width: 25%;
+    height: 100%;
+}
+
+p{
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+    background-color: cornflowerblue;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>p{
+    color: white;
+}
+
+@media(max-width: 560px){
+    aside{
+        display: none;
+    }
+    article{
+        width: 100%;
+    }
+    .palabras{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        color: white;
+    }
+
+}
